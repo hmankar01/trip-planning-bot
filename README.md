@@ -14,37 +14,47 @@ Finally, it will display all these hotels within budget along with suggested tou
 ## Functions
 
 ###  main()
-
 *The main function clearly defines the workflow of the whole script. It also takes input for `budget` from user.*
 
-### give_flight_options()
+<br>
 
+### give_flight_options()
 *This function takes user input for starting and destination city and returns the same as two variables `user_location` and ` user_destination`.*
+
+<br>
 
 ### get_flight_price(curr_budget)
  *This function gets flight price of the selected flight and changes the budget accordingly.*
 >`curr_budget` is a variable maintained in the `main` function for the   budget available at the time of executing the function. 
 
+<br>
 
 ### get_hotel_price(destination_city, curr_budget)
 *This function displays  hotels available  at the current budget in the destination city for the user to choose one from. It returns the cost as the selected hotel as variable `price`.*
 > `curr_budget` is a variable maintained in the `main` function for the   budget available at the time of executing the function.
 `destination_city` is the end city defined by the user.
 
+<br>
+
 ### get_place_price(destination_city, curr_budget)
 *This function displays  tourist places available  at the current budget in the destination city for the user to choose one from. It returns the cost as the selected these places as variable `price`.*
 > `curr_budget` is a variable maintained in the `main` function for the   budget available at the time of executing the function.
 >`destination_city` is the end city defined by the user.
 
+<br>
+
 ### budget_warning(problem)
 *This function is called when expenses get larger than current budget . It restarts flow  from the `main` function*.
 > `problem` is the expense that triggered the function.
+
+<br>
 
 ### calc_budget(budget, cost)
 *This is used to calculate budget when it is modified due to new expenses*
 > `budget` is the current budget.
 > `cost` is the expense that is to be subtracted from `budget`.
 
+<br>
 
 ## Data
 We use three excel files for the script:
@@ -52,6 +62,7 @@ We use three excel files for the script:
 2. hotels.xlsx
 3. places.xlsx
 
+<br>
 
 **flights.xlsx** 
 |  start | desination   | price   |
